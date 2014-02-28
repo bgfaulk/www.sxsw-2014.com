@@ -159,3 +159,7 @@ body {
     width: 700px;
   }
 }
+
+#modal-text-color, #myModalLabel {
+  color: black;
+}

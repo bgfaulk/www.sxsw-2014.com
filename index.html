@@ -35,16 +35,38 @@
               <h3 class="masthead-brand">My SXSW Experience</h3>
               <ul class="nav masthead-nav">
                 <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#myModal">Contact</a></li>
               </ul>
             </div>
           </div>
 
           <div class="inner cover" id="instafeed">
             
-          </div>
+          </div>          
       </div>
     </div>
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel">Contact Me!</h4>
+          </div>
+          <div class="modal-body" id="modal-text-color">
+            <p>
+              briangray42@gmail.com
+            </p>
+            <p>
+              @Briangray_IT
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>    
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -59,7 +81,7 @@
     var userFeed = new Instafeed({
         get: 'user',
         userId: 177324813,
-        accessToken: '177324813.467ede5.2a2fc556926247ee86ad5a6a4e94c6e3'
+        accessToken: '177324813.467ede5.2a2fc556926247ee86ad5a6a4e94c6e3',
     });
     userFeed.run();
 
