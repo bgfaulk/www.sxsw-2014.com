@@ -38,12 +38,13 @@
                 <li><a href="#" data-toggle="modal" data-target="#myModal">Contact</a></li>
               </ul>
             </div>
-          </div>
+          </div>  
 
           <div class="inner cover" id="instafeed">
             
-          </div>          
-      </div>
+          </div> 
+
+      </div>      
     </div>
 
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -81,7 +82,9 @@
     var userFeed = new Instafeed({
         get: 'user',
         userId: 177324813,
-        accessToken: '177324813.467ede5.2a2fc556926247ee86ad5a6a4e94c6e3',
+        resolution: 'low_resolution',
+        limit: 4,
+        accessToken: '177324813.467ede5.2a2fc556926247ee86ad5a6a4e94c6e3'
     });
     userFeed.run();
 
